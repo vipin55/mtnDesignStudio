@@ -1,0 +1,53 @@
+:host-context(.next){
+    button{
+      position: relative;
+      left: 69%;
+      top: 24px;
+      background-color: black;
+      color: white;
+      border-radius: 50%;
+      padding: 0px 12px;
+      font-size: 20px;
+      cursor: pointer;
+      height:38px;
+      border-color: #5d5b5b;
+      font-weight: bold;
+    }
+  }
+  :host-context(.prev){
+    button{
+      position: relative;
+      left: 23%;
+      top: 24px;
+      background-color: black;
+      color: white;
+      border-radius: 50%;
+      padding: 0px 12px;
+      font-size: 20px;
+      cursor: pointer;
+      height:38px;
+      border-color: #5d5b5b;
+      font-weight: bold;
+    }
+  }
+
+  :host-context(.prev){
+    span{
+      position: relative;
+      top: -8px;
+    }
+  }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px){
+    :host-context(.next){
+      button{
+        left: 76%;
+      }
+    }
+    :host-context(.prev){
+      button{
+        left: 7%;
+      }
+    }
+  }

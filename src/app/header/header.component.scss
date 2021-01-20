@@ -1,0 +1,97 @@
+.menuWrapper{
+    background-color: white;
+    box-shadow: 0px 0px 10px lightgrey;
+    ul{
+        list-style-type: none;
+        margin: auto;
+        width: 70%;
+        li{
+            margin-right: 20px;
+            font-size: 11px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            display: inline-block;
+            cursor: pointer;
+            .carousalCircle{
+                color: #F5C113;
+                font-size: 7px;
+                vertical-align: middle;
+                position: relative;
+                top: -1px;
+            }
+        }
+        .mtnImageStyle{
+            margin-right: 12%;
+            padding-top: 0;
+            img{
+                position: absolute;
+                width: 64px;
+                top: 0px;
+                box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+                border: 3px solid #fff;
+            }
+        }
+        .searchPosition{
+            position: relative;
+            left: 35%;
+        }
+        .personalPosition{
+            position: relative;
+            left: 38%;
+        }
+    }
+}
+.headerBarWrapper{
+    .orangeBar{
+        background-color: #F5C113;
+        height: 5px;
+        width: 5%;
+        float: left;
+    }
+    .blackBar{
+        background-color: black;
+        height: 5px;
+        width: 95%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .menuWrapper{
+        ul{
+            .mtnImageStyle{
+                margin-right: 16%;
+            }
+            .searchPosition{
+                left: 13%;
+            }
+            .personalPosition{
+                left: 15%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .menuWrapper{
+        ul{
+            width: 100%;
+            padding: 0;
+            li{
+                margin-right: 5px;
+                font-size: 10px;
+            }
+            .mtnImageStyle{
+                margin-right: 19%;
+            }
+            .searchPosition{
+                left: 3%;
+            }
+            .personalPosition{
+                left: 5%;
+            }
+        }
+    }
+}
+
+.headerBarWrapper{ display: none;}

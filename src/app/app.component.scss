@@ -1,0 +1,18 @@
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 66px;
+}
+@media only screen and (max-width: 767px) {
+    .container{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+#center {
+    background: repeating-linear-gradient( 90deg, #D6EAEC, #D6EAEC 1em, #E7F5F6 1em, #E7F5F6 5em) !important;
+    padding-top: 5em;
+    padding-bottom: 20%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }

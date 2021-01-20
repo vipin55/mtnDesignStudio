@@ -1,0 +1,97 @@
+:host-context(.slideComp){
+  min-height: 200px;
+  .slide{
+    padding-top: 20px;
+    a{
+      font-size: 7px;
+      text-decoration: none;
+      color:black;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  :host-context(.slideComp:nth-child(3)){
+    transform: scale(1.8);
+    margin-left: 63px;
+    margin-right: 81px;
+    border-bottom: 3px solid #F5C113;
+    font-weight: bold;
+    .slide{
+      a{
+        display:block;
+      }
+    }
+  }
+  :host-context(.slideComp){
+    width: 24%;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(211,211,211);
+    background: linear-gradient(white 0%, #EEEEEE 80%, #EEEEEE 80%, #EEEEEE 100%);
+    cursor: move;
+    background-color: #fbf8f8;
+    .slide{
+      a{
+        display:none;
+      }
+    }
+    img{
+      width: 40%;
+    }
+  }
+  :host-context(.slideComp:last-child){
+    margin-right: 0;
+  } 
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  :host-context(.slideComp:nth-child(2)){
+    transform: scale(1.8);
+    margin-left: 63px;
+    margin-right: 81px;
+    border-bottom: 3px solid #F5C113;
+    font-weight: bold;
+    .slide{
+      a{
+        display:block;
+      }
+    }
+  }
+  :host-context(.slideComp){
+    margin-right: 20px;
+    width:28%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+    cursor: move;
+    .slide{
+      a{
+        display:none;
+      }
+    }
+    img{
+      width: 40%;
+    }    
+}
+}
+@media only screen and (max-width: 767px) {
+  :host-context(.slideComp){
+    margin-right: 10px;
+    margin-left: 10px;
+    width:100%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+    cursor: move;
+    border-bottom: 3px solid #F5C113;
+    font-weight: bold;
+    img{
+      width: 40%;
+    }
+    .slide{
+      a{
+        font-size: 10px;
+      }
+    }    
+  }
+}
